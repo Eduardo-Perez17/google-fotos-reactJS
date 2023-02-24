@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.grid-father {
+	display: grid;
+	grid-template-columns: 30px 1fr 30px;
+}
+
+.grid-son {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}

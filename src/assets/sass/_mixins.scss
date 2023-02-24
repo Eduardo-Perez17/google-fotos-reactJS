@@ -1,0 +1,17 @@
+@mixin mainFlexCenter($content, $align) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $content;
+	align-items: $align;
+}
+
+@mixin mainFlexOrGrid($display, $justify, $align) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin mainFlexJustify($justify) {
+	display: flex;
+	justify-content: $justify;
+}
