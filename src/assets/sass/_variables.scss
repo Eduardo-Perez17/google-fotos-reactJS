@@ -1,8 +1,32 @@
+@import './mixins';
+
 $color-text: #202124;
+$color-text-transparent: #000000c7;
 $color-button: #fff;
+$color-hook: #174ea6;
+$color-error: #fd3c3c;
 
 $bacground-trasnparent-gray: rgb(241, 243, 244);
 $bacground-trasnparent-blue: rgb(232, 240, 254);
 $border: rgb(218, 220, 224);
+$bacground-drop: rgb(239, 239, 239);
 $bacground-bottom: #1a73e8;
-$color-hook: #174ea6;
+
+.profile {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	@include mainFlexOrGrid(flex, column, center);
+}
+
+.profileUser {
+	width: 60px;
+	height: 60px;
+	background: antiquewhite;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-size: 25px;
+	@include mainFlexOrGrid(flex, center, center);
+}

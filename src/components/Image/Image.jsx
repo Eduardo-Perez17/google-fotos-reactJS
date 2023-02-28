@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Image = ({ imgSrc, imgAlt, imgClass }) => {
+const Image = ({ imgSrc, imgAlt, imgClass, imgClick }) => {
 	return React.createElement('img', {
 		src: imgSrc,
 		alt: imgAlt,
 		className: imgClass,
+		onClick: imgClick,
 	});
 };
 

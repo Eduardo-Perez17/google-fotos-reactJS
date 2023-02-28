@@ -1,15 +1,17 @@
 import { Outlet } from 'react-router-dom';
 import './layaout.scss';
 
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 import { Box } from '../components/Box';
 
-const Layaout = ({ children }) => {
+const Layaout = () => {
 	return (
 		<Box boxClass='grid-father'>
 			<Box boxClass='grid-son'>
-				<h1>HEADER</h1>
+				<Header />
 				<Outlet />
-				<h1>FOOTER</h1>
+				<Footer />
 			</Box>
 		</Box>
 	);

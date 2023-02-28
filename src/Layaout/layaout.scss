@@ -8,12 +8,40 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+.button {
+	color: #fff;
+	background-color: #1a73e8;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #cdcdcd;
+	border-radius: 4px;
+}
+
 .grid-father {
 	display: grid;
 	grid-template-columns: 30px 1fr 30px;
 }
 
 .grid-son {
-	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+@media screen and (min-width: 900px) {
+	.box-pages {
+		margin-left: 200px;
+	}
 }
